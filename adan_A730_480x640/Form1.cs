@@ -85,9 +85,9 @@ namespace adan
             // Mute color logic: Red if muted, Black if active
             Color statusColor = _muted ? Color.Red : Color.LightGreen;
 
-            using (Font timeFont = new Font("Tahoma", 16, FontStyle.Bold))
-            using (Font statusFont = new Font("Tahoma", 12, FontStyle.Bold))
-            using (Font dateFont = new Font("Tahoma", 12, FontStyle.Regular))
+            using (Font timeFont = new Font("Tahoma", 12, FontStyle.Regular))
+            using (Font statusFont = new Font("Tahoma", 10, FontStyle.Regular))
+            using (Font dateFont = new Font("Tahoma", 10, FontStyle.Regular))
             using (Brush blackBrush = new SolidBrush(Color.White))
             using (Brush alertBrush = new SolidBrush(statusColor))
             using (StringFormat sf = new StringFormat())

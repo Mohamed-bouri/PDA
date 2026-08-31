@@ -19,6 +19,7 @@
     <FormFactorID>
     </FormFactorID>
     <ApplicationIcon>icon.ico</ApplicationIcon>
+    <StartupObject>adan.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

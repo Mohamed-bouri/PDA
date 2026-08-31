@@ -121,19 +121,19 @@ namespace adan
 
             Label lGMT = new Label();
             lGMT.Text = "Timezone:";
-            lGMT.Font = new Font("Tahoma", 12, FontStyle.Regular);
+            lGMT.Font = new Font("Tahoma", 10, FontStyle.Regular);
             lGMT.Location = new Point(12, y + 4);
             lGMT.Size = new Size(144, 36);
             this.Controls.Add(lGMT);
 
             lblGMTStatus = new Label();
-            lblGMTStatus.Font = new Font("Tahoma", 12, FontStyle.Bold);
+            lblGMTStatus.Font = new Font("Tahoma", 10, FontStyle.Bold);
             lblGMTStatus.Location = new Point(164, y + 4);
             lblGMTStatus.Size = new Size(140, 36);
             this.Controls.Add(lblGMTStatus);
 
             btnGMT = new Button();
-            btnGMT.Font = new Font("Tahoma", 10, FontStyle.Regular);
+            btnGMT.Font = new Font("Tahoma", 8, FontStyle.Regular);
             btnGMT.Location = new Point(312, y);
             btnGMT.Size = new Size(116, 44);
             btnGMT.Click += new EventHandler(OnToggleGMT);
@@ -150,7 +150,7 @@ namespace adan
 
             Label lAdj = new Label();
             lAdj.Text = "Manual adjustments (minutes, +/-)";
-            lAdj.Font = new Font("Tahoma", 10, FontStyle.Regular);
+            lAdj.Font = new Font("Tahoma", 8, FontStyle.Regular);
             lAdj.ForeColor = Color.FromArgb(80, 80, 80);
             lAdj.Location = new Point(12, y);
             lAdj.Size = new Size(416, 28);
@@ -162,14 +162,14 @@ namespace adan
             {
                 Label lName = new Label();
                 lName.Text = PRAYER_NAMES[i] + ":";
-                lName.Font = new Font("Tahoma", 12, FontStyle.Regular);
+                lName.Font = new Font("Tahoma", 8, FontStyle.Regular);
                 lName.Location = new Point(12, y + 4);
                 lName.Size = new Size(120, 36);
                 this.Controls.Add(lName);
 
                 adjBoxes[i] = new TextBox();
                 adjBoxes[i].Text = curAdj[i].ToString();
-                adjBoxes[i].Font = new Font("Tahoma", 12, FontStyle.Regular);
+                adjBoxes[i].Font = new Font("Tahoma", 10, FontStyle.Regular);
                 adjBoxes[i].Location = new Point(140, y);
                 adjBoxes[i].Size = new Size(88, 40);
                 this.Controls.Add(adjBoxes[i]);
@@ -212,7 +212,7 @@ namespace adan
 
             btnTest = new Button();
             btnTest.Text = "Test Sound";
-            btnTest.Font = new Font("Tahoma", 12, FontStyle.Regular);
+            btnTest.Font = new Font("Tahoma", 10, FontStyle.Regular);
             btnTest.Location = new Point(12, y);
             btnTest.Size = new Size(172, 52);
             btnTest.Click += new EventHandler(OnTest);
@@ -220,7 +220,7 @@ namespace adan
 
             btnSave = new Button();
             btnSave.Text = "Save";
-            btnSave.Font = new Font("Tahoma", 12, FontStyle.Regular);
+            btnSave.Font = new Font("Tahoma", 10, FontStyle.Regular);
             btnSave.Location = new Point(200, y);
             btnSave.Size = new Size(104, 52);
             btnSave.Click += new EventHandler(OnSave);
@@ -228,7 +228,7 @@ namespace adan
 
             btnCancel = new Button();
             btnCancel.Text = "Cancel";
-            btnCancel.Font = new Font("Tahoma", 12, FontStyle.Regular);
+            btnCancel.Font = new Font("Tahoma", 10, FontStyle.Regular);
             btnCancel.Location = new Point(316, y);
             btnCancel.Size = new Size(112, 52);
             btnCancel.DialogResult = DialogResult.Cancel;
@@ -348,7 +348,7 @@ namespace adan
 
             Label l2 = new Label();
             l2.Text = prayerName + "   " + DateTime.Now.ToString("HH:mm");
-            l2.Font = new Font("Tahoma", 18, FontStyle.Bold);
+            l2.Font = new Font("Tahoma", 14, FontStyle.Bold);
             l2.ForeColor = Color.Gold;
             l2.Location = new Point(100, 64);
             l2.Size = new Size(288, 44);
@@ -356,7 +356,7 @@ namespace adan
 
             Label l3 = new Label();
             l3.Text = "Allahu Akbar";
-            l3.Font = new Font("Tahoma", 12, FontStyle.Regular);
+            l3.Font = new Font("Tahoma", 10, FontStyle.Regular);
             l3.ForeColor = Color.FromArgb(180, 200, 255);
             l3.Location = new Point(100, 112);
             l3.Size = new Size(288, 36);
@@ -364,7 +364,7 @@ namespace adan
 
             Button btnOK = new Button();
             btnOK.Text = "Dismiss";
-            btnOK.Font = new Font("Tahoma", 12, FontStyle.Regular);
+            btnOK.Font = new Font("Tahoma", 10, FontStyle.Regular);
             btnOK.Location = new Point(116, 164);
             btnOK.Size = new Size(164, 52);
             btnOK.DialogResult = DialogResult.OK;
